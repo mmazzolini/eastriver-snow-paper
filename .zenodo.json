@@ -27,7 +27,7 @@
       "affiliation": "Department of Geosciences, University of Oslo, Oslo, Norway"
     }
   ],
-  "description": "Processing chain of the paper: ERA5 download and TopoPyScale downscaling, Gaussian-process model and point selection, ICESat-2 observations and prior correlations, the MuSA experiments (MuSA eastriver-paper with the four experiment configurations, archived separately: fork github.com/mmazzolini/MuSA, tag eastriver-paper-v1), post-processing, the staging of the data record (input data, DA experiments, website data) and the interactive figure.",
+  "description": "Processing chain of the paper: ERA5 download and TopoPyScale downscaling, Gaussian-process model and point selection, ICESat-2 observations and prior correlations, the MuSA experiments (MuSA eastriver-paper with the four experiment configurations, archived separately: doi:10.5281/zenodo.23893780), post-processing, the staging of the data record (input data, DA experiments, website data) and the interactive figure.",
   "license": "GPL-3.0",
   "keywords": [
     "snow depth",
@@ -45,7 +45,7 @@
     },
     {
       "relation": "requires",
-      "identifier": "TODO: DOI of MuSA eastriver-paper",
+      "identifier": "10.5281/zenodo.23893780",
       "resource_type": "software"
     }
   ]

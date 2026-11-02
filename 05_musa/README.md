@@ -4,7 +4,7 @@ The experiments ran with MuSA `eastriver-paper`, kept in a fork of MuSA:
 
 - **Code:** https://github.com/mmazzolini/MuSA/tree/eastriver-paper, tag `eastriver-paper-v1`
   (commit `075c336`)
-- **Archive:** TODO Zenodo DOI
+- **Archive:** https://doi.org/10.5281/zenodo.23893780 (Zenodo, version `eastriver-paper-v1`)
 
 ```bash
 git clone --branch eastriver-paper-v1 https://github.com/mmazzolini/MuSA.git

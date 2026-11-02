@@ -46,6 +46,11 @@
         "relation": "isDerivedFrom",
         "identifier": "https://github.com/mmazzolini/eastriver-snow-paper",
         "resource_type": "software"
+      },
+      {
+        "relation": "isCompiledBy",
+        "identifier": "10.5281/zenodo.23893780",
+        "resource_type": "software"
       }
     ]
   }

@@ -36,7 +36,7 @@ flowchart LR
 | [`02_gp_model_points/`](02_gp_model_points/) | scaler, sparse GP of snow depth on the predictors, selection of the 5400 model cells | Python 3.11 + GPy 1.13.2 |
 | [`03_ic2_cells_obs_corr/`](03_ic2_cells_obs_corr/) | ATL03 photons, synthetic IC2 snow depth, the 400 IC2 cells per year, observation files and error variances, GP and Gaspari–Cohn correlation matrices | `gpy-env`, `MuSAenv`, SlideRule |
 | [`04_forcing/`](04_forcing/) | daily MuSA forcing files of the model cells and the IC2 cells | `downscaling` |
-| [`05_musa/`](05_musa/) | pointer to MuSA `eastriver-paper` ([fork](https://github.com/mmazzolini/MuSA/tree/eastriver-paper), tag `eastriver-paper-v1`; archived separately): MuSA with minimal changes (upstream code between v2.2 and v2.3) and the four experiment configurations | `MuSAenv` |
+| [`05_musa/`](05_musa/) | pointer to MuSA `eastriver-paper` ([fork](https://github.com/mmazzolini/MuSA/tree/eastriver-paper), tag `eastriver-paper-v1`; archived at https://doi.org/10.5281/zenodo.23893780): MuSA with minimal changes (upstream code between v2.2 and v2.3) and the four experiment configurations | `MuSAenv` |
 | [`06_postprocessing/`](06_postprocessing/) | ensembles to netCDF; mapping of the ensembles to the 50 m grid | `MuSAenv`, `gpy-env` |
 | [`07_data_record/`](07_data_record/) | staging and upload of the Zenodo data record | `gpy-env` |
 | [`web/`](web/), [`docs/`](docs/) | data files and page of the interactive figure | `gpy-env`, Node.js |

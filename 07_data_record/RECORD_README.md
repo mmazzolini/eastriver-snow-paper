@@ -39,7 +39,7 @@ top of the tree).
 | `24_GPE` | 2023-10-01 to 2024-09-30 | Gaussian process (GPE) | 2024-04-03 | `24GPpow2NPnb_var` |
 | `24_GCE` | 2023-10-01 to 2024-09-30 | Gaspari–Cohn (GCE) | 2024-04-03 | `24GCpow2NP_var` |
 
-MuSA with the FSM2 snow model, 100 members, iterative ensemble smoother (4 iterations), ICESat-2 (IC2)
+MuSA `eastriver-paper` (https://doi.org/10.5281/zenodo.23893780) with the FSM2 snow model, 100 members, iterative ensemble smoother (4 iterations), ICESat-2 (IC2)
 snow depth at 400 cells assimilated on the survey date and spread to 5400 model cells. The file names are
 those written by the post-processing of the code repository (`06_postprocessing`).
 
