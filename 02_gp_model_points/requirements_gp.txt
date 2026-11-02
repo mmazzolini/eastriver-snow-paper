@@ -1,0 +1,19 @@
+# Versions printed inside Slurm job 39882647 (checks/print_versions.py).
+# Environment A, used for s2-s5: Python 3.11.7 (module anaconda3/2024.02-1-11.4)
+# with GPy, paramz, netCDF4, geopandas, pyproj, shapely from ~/.local/lib/python3.11.
+numpy==1.26.4
+scipy==1.11.4
+pandas==2.1.4
+xarray==2023.6.0
+netCDF4==1.7.2
+scikit-learn==1.2.2
+joblib==1.2.0
+GPy==1.13.2
+paramz==0.9.6
+geopandas==1.0.1
+pyproj==3.6.1    # wheel with PROJ 9.3.0
+shapely==2.0.6
+# Environment B (conda env gpy-env), used for s1 and needed to load scaler.save
+# (a scikit-learn 1.8.0 pickle): Python 3.11.14, numpy 1.26.4, scipy 1.17.1,
+# pandas 3.0.1, xarray 2026.2.0, scikit-learn 1.8.0, joblib 1.5.3, plus the
+# ~/.local packages above (GPy 1.13.2, paramz 0.9.6, netCDF4 1.7.2, pyproj 3.6.1).

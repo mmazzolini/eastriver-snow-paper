@@ -1,0 +1,17 @@
+# SlideRule client used by 03_ic2_cells_obs_corr/s1_download_atl03.py (pip venv on Python 3.11.7)
+certifi==2026.7.22
+charset-normalizer==3.5.2
+geopandas==1.2.0
+idna==3.20
+numpy==2.4.6
+packaging==26.3
+pandas==3.0.6
+pyarrow==26.0.0
+pyogrio==0.13.0
+pyproj==3.7.2
+python-dateutil==2.9.0.post0
+requests==2.34.2
+shapely==2.2.0
+six==1.17.0
+sliderule==5.6.3
+urllib3==2.8.0

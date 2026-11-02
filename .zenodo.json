@@ -1,0 +1,52 @@
+{
+  "title": "Code for: Leveraging probabilistic machine learning to enable large scale assimilation of ICESat-2 snow depth observations",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Mazzolini, Marco",
+      "affiliation": "Department of Geosciences, University of Oslo, Oslo, Norway"
+    },
+    {
+      "name": "Aalstad, Kristoffer",
+      "affiliation": "Department of Geosciences, University of Oslo, Oslo, Norway"
+    },
+    {
+      "name": "Cowherd, Marianne",
+      "affiliation": "Department of Earth Sciences, Montana State University, Bozeman, USA; Department of Environmental Science, Policy, and Management, University of California Berkeley, Berkeley, CA, USA"
+    },
+    {
+      "name": "Alonso-González, Esteban",
+      "affiliation": "Pyrenean Institute of Ecology, CSIC, Jaca, Spain"
+    },
+    {
+      "name": "Girotto, Manuela",
+      "affiliation": "Department of Environmental Science, Policy, and Management, University of California Berkeley, Berkeley, CA, USA"
+    },
+    {
+      "name": "Treichler, Désirée",
+      "affiliation": "Department of Geosciences, University of Oslo, Oslo, Norway"
+    }
+  ],
+  "description": "Processing chain of the paper: ERA5 download and TopoPyScale downscaling, Gaussian-process model and point selection, ICESat-2 observations and prior correlations, the MuSA experiments (MuSA eastriver-paper with the four experiment configurations, archived separately: fork github.com/mmazzolini/MuSA, tag eastriver-paper-v1), post-processing, the staging of the data record (input data, DA experiments, website data) and the interactive figure.",
+  "license": "GPL-3.0",
+  "keywords": [
+    "snow depth",
+    "data assimilation",
+    "ICESat-2",
+    "MuSA",
+    "TopoPyScale",
+    "Gaussian process"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementedBy",
+      "identifier": "TODO: DOI of the data record",
+      "resource_type": "dataset"
+    },
+    {
+      "relation": "requires",
+      "identifier": "TODO: DOI of MuSA eastriver-paper",
+      "resource_type": "software"
+    }
+  ]
+}

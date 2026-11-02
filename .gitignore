@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.ipynb
+slurm-*.out
+slurm-*.err
+slurmOUT/
+# data never go into this repository (see the data record)
+*.nc
+*.npy
+*.npz
+*.feather
+*.h5
+*.tif
+*.bin
+*.bin.gz
+docs/data/

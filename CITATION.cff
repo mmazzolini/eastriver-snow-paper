@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper and the data record."
+title: "Code for: Leveraging probabilistic machine learning to enable large scale assimilation of ICESat-2 snow depth observations"
+authors:
+  - family-names: Mazzolini
+    given-names: Marco
+    affiliation: "Department of Geosciences, University of Oslo, Oslo, Norway"
+  - family-names: Aalstad
+    given-names: Kristoffer
+    affiliation: "Department of Geosciences, University of Oslo, Oslo, Norway"
+  - family-names: Cowherd
+    given-names: Marianne
+    affiliation: "Department of Earth Sciences, Montana State University, Bozeman, USA; Department of Environmental Science, Policy, and Management, University of California Berkeley, Berkeley, CA, USA"
+  - family-names: Alonso-González
+    given-names: Esteban
+    affiliation: "Pyrenean Institute of Ecology, CSIC, Jaca, Spain"
+  - family-names: Girotto
+    given-names: Manuela
+    affiliation: "Department of Environmental Science, Policy, and Management, University of California Berkeley, Berkeley, CA, USA"
+  - family-names: Treichler
+    given-names: Désirée
+    affiliation: "Department of Geosciences, University of Oslo, Oslo, Norway"
+license: GPL-3.0
+repository-code: "https://github.com/mmazzolini/eastriver-snow-paper"
+date-released: "TODO"

@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "upload_type": "dataset",
+    "title": "Data for: Leveraging probabilistic machine learning to enable large scale assimilation of ICESat-2 snow depth observations",
+    "creators": [
+      {
+        "name": "Mazzolini, Marco",
+        "affiliation": "Department of Geosciences, University of Oslo, Oslo, Norway"
+      },
+      {
+        "name": "Aalstad, Kristoffer",
+        "affiliation": "Department of Geosciences, University of Oslo, Oslo, Norway"
+      },
+      {
+        "name": "Cowherd, Marianne",
+        "affiliation": "Department of Earth Sciences, Montana State University, Bozeman, USA; Department of Environmental Science, Policy, and Management, University of California Berkeley, Berkeley, CA, USA"
+      },
+      {
+        "name": "Alonso-González, Esteban",
+        "affiliation": "Pyrenean Institute of Ecology, CSIC, Jaca, Spain"
+      },
+      {
+        "name": "Girotto, Manuela",
+        "affiliation": "Department of Environmental Science, Policy, and Management, University of California Berkeley, Berkeley, CA, USA"
+      },
+      {
+        "name": "Treichler, Désirée",
+        "affiliation": "Department of Geosciences, University of Oslo, Oslo, Norway"
+      }
+    ],
+    "description": "Data of the paper: the input data that are not available elsewhere (SRTM DEM of the downscaling, the model and ICESat-2 cells, the 50 m predictor grid of the Gaussian-process model), the outputs of the four data-assimilation experiments (MuSA, ICESat-2 snow depth, East River basin, Colorado, water years 2023 and 2024; Gaussian-process and Gaspari-Cohn prior correlations: prior and posterior snow-depth ensembles of 100 members at the 5400 model cells and 400 ICESat-2 cells, and mapped to the 50 m grid on the ASO survey dates) and the data files of the interactive website. Each folder of the record is one zip file; see README.md for the structure and the file formats, and the code repository for the processing chain. ASO snow depth is not included.",
+    "access_right": "open",
+    "license": "cc-by-4.0",
+    "keywords": [
+      "snow depth",
+      "data assimilation",
+      "ICESat-2",
+      "MuSA",
+      "FSM2",
+      "East River",
+      "Gaussian process",
+      "ASO"
+    ],
+    "related_identifiers": [
+      {
+        "relation": "isDerivedFrom",
+        "identifier": "https://github.com/mmazzolini/eastriver-snow-paper",
+        "resource_type": "software"
+      }
+    ]
+  }
+}

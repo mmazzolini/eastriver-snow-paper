@@ -1,0 +1,54 @@
+# ERA5 download settings for s1_download_era5.py.
+# Values are those of the TopoPyScale projects of the paper (config_GP*.yml) and of the
+# CDS requests of TopoPyScale's fetch_era5.py (era5_request_surf / era5_request_plev).
+
+# Period: monthly files from the month of `start` to the month of `end`
+# (same rule as TopoPyScale: end - 1 day + MonthEnd). 2022-10 .. 2024-10 = 25 months.
+start: 2022-10-01
+end: 2024-10-01
+
+# project.extent of the TopoPyScale configs, [latN, latS, lonW, lonE] (degrees).
+extent: [39.024312387387695, 38.6646365007304, -107.11976270342274, -106.76002286246464]
+# TopoPyScale's get_era5() widens the extent by 0.4 degrees on each side before the request.
+# With grid 0.25/0.25 the CDS returns a 5 x 5 grid, lat 39.265..38.264, lon -107.52..-106.519.
+buffer_deg: 0.4
+grid: "0.25/0.25"
+product_type: reanalysis
+# Hourly data ('1H' in TopoPyScale).
+timestep: 1H
+
+# Single levels (SURF). The last four are requested as in TopoPyScale's request and dropped
+# afterwards (surf_drop), as TopoPyScale's remap_CDSbeta did.
+surf_variables:
+  - geopotential
+  - 2m_dewpoint_temperature
+  - surface_thermal_radiation_downwards
+  - surface_solar_radiation_downwards
+  - surface_pressure
+  - total_precipitation
+  - 2m_temperature
+  - toa_incident_solar_radiation
+  - friction_velocity
+  - instantaneous_moisture_flux
+  - instantaneous_surface_sensible_heat_flux
+surf_drop: [ishf, ie, zust, tisr]
+
+# Pressure levels (PLEV). One CDS request per month and level (all six variables): the CDS
+# refuses one request with all levels of a month ("cost limits exceeded").
+plev_variables:
+  - geopotential
+  - temperature
+  - u_component_of_wind
+  - v_component_of_wind
+  - specific_humidity
+  - relative_humidity
+plevels: [500, 600, 700, 800, 900, 1000]
+
+# Number of CDS requests sent in parallel (download_threads of the TopoPyScale configs).
+download_threads: 5
+
+# Folder for SURF_YYYYMM.nc / PLEV_YYYYMM.nc. TopoPyScale reads them from
+# <project>/inputs/climate/, so either point this there or link the files there.
+output_dir: /global/scratch/users/marcomaz/ERA5_EastRiver/inputs/climate
+# Keep the raw CDS downloads (output_dir/raw/) after the monthly files are written.
+keep_raw: false

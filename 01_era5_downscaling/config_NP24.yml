@@ -1,0 +1,63 @@
+project:
+    name: East
+    description: Downscaling for East River
+    authors:
+        - Cowherd M.
+        - Marcomaz
+    date: September 2024
+    directory: ./
+    start: 2023-10-01
+    end: 2024-10-01
+    split:
+        IO: False
+        time: 1  # run indivudal batch in time
+        space: None  # to be implemented
+    extent: [39.024312387387695, 38.6646365007304, -107.11976270342274, -106.76002286246464] #  [39.44, 38.18, -107.61, -106.33] # [39.15278287, 38.55698024, -107.25619165, -106.60714708]()
+    CPU_cores: 10 #0 #  savio normal has 32 cores, perlmutter has 256... 
+    climate: era5
+    
+climate:
+    era5:
+        path: inputs/climate/
+        product: reanalysis
+        timestep: 1H
+        plevels: [500,600,700,800,900,1000] #[500,575,650,725,800,850,900,950,1000]
+        download_threads: 5
+        realtime: False
+        data_repository: cds
+        cds_output_format: netcdf
+        cds_download_foramt: unarchived
+        rm_daily: False        
+    precip_lapse_rate: True
+
+dem:
+    file: srtm_eastriver_clipped.tif # ASO_ER_dtmvf_50m.tif  #  # 
+    epsg: 32613
+    horizon_increments: 10
+
+sampling:
+    method: points
+    points:
+        csv_file: IC2NP_24.csv
+        name_column: 'name'
+
+toposcale:
+    interpolation_method: idw
+    pt_sampling_method: nearest
+    LW_terrain_contribution: True
+
+outputs:
+    directory: outputs
+    variables: all  # list or combination name
+    file:
+        clean_outputs: False
+        clean_FSM: False
+        df_centroids: df_centroids.pck
+        ds_param: ds_param.nc
+        ds_solar: ds_solar.nc
+        da_horizon: da_horizon.nc
+        landform: landform.tif
+        downscaled_pt: down_pt_*.nc
+clean_up:
+    delete_tmp_dirs: False
+
