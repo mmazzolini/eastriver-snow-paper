@@ -9,6 +9,7 @@ members, iterative ensemble smoother) and spread to 5400 model cells of the East
 with a Gaussian-process (GPE) or Gaspari–Cohn (GCE) prior correlation. The ensembles are mapped to a 50 m
 grid and compared with Airborne Snow Observatory (ASO) lidar on 1 April 2023 and 3 April 2024.
 
+- **Code archive** (this repository, release v1.0): https://doi.org/10.5281/zenodo.23914632
 - **Data record** (input data, outputs of the four experiments, website data): https://doi.org/10.5281/zenodo.23894419
 - **Interactive figure**: https://mmazzolini.github.io/eastriver-snow-viewer/ (source in [`docs/`](docs/))
 

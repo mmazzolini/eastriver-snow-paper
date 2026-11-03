@@ -23,6 +23,7 @@ authors:
 license: GPL-3.0
 repository-code: "https://github.com/mmazzolini/eastriver-snow-paper"
 version: "v1.0"
+doi: "10.5281/zenodo.23914632"
 date-released: "2026-11-03"
 references:
   - type: data
