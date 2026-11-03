@@ -22,4 +22,25 @@ authors:
     affiliation: "Department of Geosciences, University of Oslo, Oslo, Norway"
 license: GPL-3.0
 repository-code: "https://github.com/mmazzolini/eastriver-snow-paper"
-date-released: "TODO"
+version: "v1.0"
+date-released: "2026-11-03"
+references:
+  - type: data
+    title: "Data for: Leveraging probabilistic machine learning to enable large scale assimilation of ICESat-2 snow depth observations"
+    authors:
+      - family-names: Mazzolini
+        given-names: Marco
+      - family-names: Aalstad
+        given-names: Kristoffer
+      - family-names: Cowherd
+        given-names: Marianne
+      - family-names: Alonso-González
+        given-names: Esteban
+      - family-names: Girotto
+        given-names: Manuela
+      - family-names: Treichler
+        given-names: Désirée
+    doi: "10.5281/zenodo.23894419"
+    publisher:
+      name: Zenodo
+    year: 2026

@@ -2,14 +2,14 @@
 
 Code of the paper *Leveraging probabilistic machine learning to enable large scale assimilation of ICESat-2
 snow depth observations* by Mazzolini, Aalstad, Cowherd, Alonso-González, Girotto and Treichler (manuscript
-for Geoscientific Model Development; TODO: DOI).
+for Geoscientific Model Development).
 
 ICESat-2 (IC2) snow depth at 400 cells per water year is assimilated with MuSA (FSM2 snow model, 100
 members, iterative ensemble smoother) and spread to 5400 model cells of the East River basin, Colorado,
 with a Gaussian-process (GPE) or Gaspari–Cohn (GCE) prior correlation. The ensembles are mapped to a 50 m
 grid and compared with Airborne Snow Observatory (ASO) lidar on 1 April 2023 and 3 April 2024.
 
-- **Data record** (input data, outputs of the four experiments, website data): TODO Zenodo DOI
+- **Data record** (input data, outputs of the four experiments, website data): https://doi.org/10.5281/zenodo.23894419
 - **Interactive figure**: https://mmazzolini.github.io/eastriver-snow-viewer/ (source in [`docs/`](docs/))
 
 ## Processing chain

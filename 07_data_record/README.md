@@ -5,6 +5,8 @@ elsewhere (DEM, point files, the 50 m predictor grid of the GP model), the outpu
 experiments and the data files of the website in `docs/`. The record's own description is
 `RECORD_README.md` (copied into the record as `documentation/README.md`).
 
+Published record: https://doi.org/10.5281/zenodo.23894419
+
 ## Steps
 
 1. Stage the record as a folder tree and pack it for Zenodo (compute node, ~1 h):
